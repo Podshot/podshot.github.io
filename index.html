@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Podshot's MCEdit Filters</title>
+		<title>MCEdit Filters</title>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		<style type="text/css">
 			.space-between-filters {
@@ -48,7 +48,7 @@
 		</style>
 		<script type="text/javascript">
 			function createFilterHTML(filter) {
-				return '<table class="filter-table"><tr class="filter-heading">	<td><h2>' + filter.name + '</h2></td><td style="position:relative; top: 16px;float:right;"><a title="Download" href="' + filter.dl + '"><img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/32/Network-Download-icon.png" /></a><a title="View Source" href="' + filter.src + '"><img src="alt/GitHub-Mark-32px.png" /></a></td></tr><tr><td class="filter-desc">' + filter.desc + '</td></tr></table><div class="space-between-filters"></div>';
+				return '<table class="filter-table"><tr class="filter-heading">	<td><h2>' + filter.name + '</h2></td><td style="position:relative; top: 16px;float:right;"><a title="Download" href="' + filter.dl + '"><img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/32/Network-Download-icon.png" /></a><a title="View Source" href="' + filter.src + '"><img src="lib/GitHub-Mark-32px.png" /></a></td></tr><tr><td class="filter-desc">' + filter.desc + '</td></tr></table><div class="space-between-filters"></div>';
 			}
 			function createSectionHTML(section) {
 				var result = '<td class="section"><h2 class="section-header">' + section.heading + '</h2>';
@@ -59,7 +59,7 @@
 				return result;
 			}
 			$(document).ready(function() {
-				$.ajax("alt/filters.json").done(function(json) {
+				$.ajax("lib/filters.json").done(function(json) {
 					var sections = eval(json);
 					var sectionsPerRow = 2;
 					var target = document.getElementById("all_filters");
