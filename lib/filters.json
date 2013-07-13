@@ -5,22 +5,22 @@
 			{
 				"name": "Purge",
 				"desc": "Deletes the selected mob from the Selection Box ",
-				"dl": "http://205.196.123.32/fhpxfq7htwwg/p62253si5jjdfh6/Purge.py",
+				"dl": "http://podshot.github.io/files/Purge.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Purge.py"
 			}, {
 				"name": "Fill Dispensers Filter",
 				"desc": "Original Filter by Sethbling. Modified to support Droppers ",
-				"dl": "http://205.196.120.177/yeyxq74342ng/8fjby97cxb25wcf/filldispensers.py",
+				"dl": "http://podshot.github.io/files/filldispensers.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/filldispensers.py"
 			}, {
 				"name": "Presistence Filter",
 				"desc": "Removes all entities in selection box",
-				"dl": "http://199.91.153.113/k2yd8c2cgepg/b6c4ievodiqdcl5/Persistence.py",
+				"dl": "http://podshot.github.io/files/Persistence.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Persistence.py"
 			}, {
 				"name": "Name Mobs Filter",
 				"desc": "Names mobs in selection box",
-				"dl": "http://205.196.123.9/85sd2442igeg/czn89a85u8qk736/Name+Mobs.py",
+				"dl": "http://podshot.github.io/files/Name+Mobs.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Name%20Mobs.py"
 			}
 		]
@@ -30,22 +30,22 @@
 			{
 				"name": "Rename Tiles Filter",
 				"desc": "Renames all Tile Entities in the Selection Box ",
-				"dl": "http://205.196.120.177/yu66jsjrsbyg/agh3lm24tqsge6r/Rename+Tiles.py",
+				"dl": "http://podshot.github.io/files/Rename+Tiles.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Rename%20Tiles.py"
 			}, {
 				"name": "Add Vines Filter",
 				"desc": " Add Vines to the sides of blocks ",
-				"dl": "http://205.196.123.172/w8kwf7f24jwg/n6p59acqe9177x0/AddVines.py",
+				"dl": "http://podshot.github.io/files/AddVines.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/AddVines.py"
 			}, {
 				"name": "Schematic To Script Filter",
 				"desc": " Converts the Selection box into Python Code for filters. ",
-				"dl": "http://199.91.154.50/acpv42r1635g/l9mqp8tukw57u8l/SchematicToScript.py",
+				"dl": "http://podshot.github.io/files/SchematicToScript.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SchematicToScript.py"
 			}, {
 				"name": "Set Block Data",
 				"desc": " Changes the Data Value of the choosen block in the Selection Box ",
-				"dl": "http://205.196.120.227/y3ah0jtd9uag/abz6k2zapl5y9zf/SetBlockData.py",
+				"dl": "http://podshot.github.io/files/SetBlockData.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SetBlockData.py"
 			}
 		]
