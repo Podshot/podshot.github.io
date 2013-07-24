@@ -47,6 +47,17 @@
 				"desc": " Changes the Data Value of the choosen block in the Selection Box ",
 				"dl": "http://podshot.github.io/files/SetBlockData.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SetBlockData.py"
+			}, {
+				"name": "Fireworks Editor",
+				"desc": " Creates firework rocket with custom explosion effects",
+				"dl": "http://podshot.github.io/files/FireworksEdit.py",
+				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/FireworksEdit.py"
+			}
+			, {
+				"name": "Fireworks Spawner",
+				"desc": " Select container(s) which will be changed to mob spawners that spawn the firework rocket inside",
+				"dl": "http://podshot.github.io/files/FireworksSpawner.py",
+				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/FireworksSpawner.py"
 			}
 		]
 	}
