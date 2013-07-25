@@ -7,21 +7,25 @@
 				"desc": "Deletes the selected mob from the Selection Box ",
 				"dl": "http://podshot.github.io/files/Purge.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Purge.py"
+				"vid": "https://youtube.com"
 			}, {
 				"name": "Fill Dispensers Filter",
 				"desc": "Original Filter by Sethbling. Modified to support Droppers ",
 				"dl": "http://podshot.github.io/files/filldispensers.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/filldispensers.py"
+				"vid": "https://youtube.com"
 			}, {
 				"name": "Presistence Filter",
 				"desc": "Removes all entities in selection box",
 				"dl": "http://podshot.github.io/files/Persistence.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Persistence.py"
+				"vid": "https://youtube.com"
 			}, {
 				"name": "Name Mobs Filter",
 				"desc": "Names mobs in selection box",
 				"dl": "http://podshot.github.io/files/Name+Mobs.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Name%20Mobs.py"
+				"vid": "https://youtube.com"
 			}
 		]
 	}, {
@@ -32,21 +36,25 @@
 				"desc": "Renames all Tile Entities in the Selection Box ",
 				"dl": "http://podshot.github.io/files/Rename+Tiles.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Rename%20Tiles.py"
+				"vid": "https://youtube.com"
 			}, {
 				"name": "Add Vines Filter",
 				"desc": " Add Vines to the sides of blocks ",
 				"dl": "http://podshot.github.io/files/AddVines.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/AddVines.py"
+				"vid": "https://youtube.com"
 			}, {
 				"name": "Schematic To Script Filter",
 				"desc": " Converts the Selection box into Python Code for filters. ",
 				"dl": "http://podshot.github.io/files/SchematicToScript.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SchematicToScript.py"
+				"vid": "https://youtube.com"
 			}, {
 				"name": "Set Block Data",
 				"desc": " Changes the Data Value of the choosen block in the Selection Box ",
 				"dl": "http://podshot.github.io/files/SetBlockData.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SetBlockData.py"
+				"vid": "https://youtube.com"
 			}
 		]
 	}
