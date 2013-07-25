@@ -55,6 +55,18 @@
 				"dl": "http://podshot.github.io/files/SetBlockData.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SetBlockData.py"
 				"vid": "https://youtube.com"
+			}, {
+				"name": "Fireworks Editor",
+				"desc": " Creates firework rocket with custom explosion effects",
+				"dl": "http://podshot.github.io/files/FireworksEdit.py",
+				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/FireworksEdit.py"
+				"vid": "https://youtube.com"
+			}, {
+				"name": "Fireworks Spawner",
+				"desc": " Select container(s) which will be changed to mob spawners that spawn the firework rocket inside",
+				"dl": "http://podshot.github.io/files/FireworksSpawner.py",
+				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/FireworksSpawner.py"
+				"vid": "https://youtube.com"
 			}
 		]
 	}
