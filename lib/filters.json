@@ -26,6 +26,12 @@
 				"dl": "http://podshot.github.io/files/Name+Mobs.py",
 				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Name%20Mobs.py",
 				"vid": "https://youtube.com"
+			}, {
+				"name": "Get Block Data",
+				"desc": "Get a blocks ID and Data value",
+				"dl": "http://podshot.github.io/files/getblockdata.py",
+				"src": "https:https://github.com/Podshot/MCEdit-Filters/blob/master/getblockdata.py",
+				"vid": "https://youtube.com"
 			}
 		]
 	}, {
