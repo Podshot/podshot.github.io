@@ -32,6 +32,12 @@
 				"dl": "http://podshot.github.io/files/getblockdata.py",
 				"src": "https:https://github.com/Podshot/MCEdit-Filters/blob/master/getblockdata.py",
 				"vid": "https://youtube.com"
+			}, {
+				"name": "Leasher",
+				"desc": "Leashes mobs together",
+				"dl": "http://podshot.github.io/files/Leasher.py",
+				"src": "https:https://github.com/Podshot/MCEdit-Filters/blob/master/Leasher.py",
+				"vid": "https://youtube.com"
 			}
 		]
 	}, {
