@@ -22,7 +22,7 @@
 				border-bottom-style: dotted;
 				padding-bottom: 2%;
 				/*border-bottom-left-radius: 15px;
-				border-bottom-right-radius: 15px;*/
+				 border-bottom-right-radius: 15px;*/
 				width: 100%;
 			}
 			a:hover {
@@ -39,19 +39,30 @@
 				width: 100%;
 				text-align: center;
 			}
-			.section-header{
+			.section-header {
 			}
-			td.section{
+			td.section {
 				border-top-left-radius: 35px;
 				border-top-right-radius: 35px;
 				background-color: #CCDDF0;
 				width: 20%;
 			}
+			.contribute_info{
+				font-weight: bolder;
+				text-shadow: 3px 3px 28px black;
+			}
 		</style>
 		<script type="text/javascript">
+		
 			function createFilterHTML(filter) {
-				return '<table class="filter-table"><tr class="filter-heading">	<td><h2>' + filter.name + '</h2></td><td style="position:relative; top: 16px;float:right;"><a title="Download" href="' + filter.dl + '"><img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/32/Network-Download-icon.png" /></a><a title="View Source" href="' + filter.src + '"><img src="lib/GitHub-Mark-32px.png" /></a><a title="Watch Video" href="' + filter.vid + '"><img src="lib/youtube.png" /></a></td><tr><td class="filter-desc">' + filter.desc + '</td></tr></table><div class="space-between-filters"></div>';
+				result = '<table class="filter-table"><tr class="filter-heading">	<td><h2>' + filter.name + '</h2></td><td style="position:relative; top: 16px;float:right;"><a title="Download" href="' + filter.dl + '"><img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/32/Network-Download-icon.png" /></a><a title="View Source" href="' + filter.src + '"><img src="lib/GitHub-Mark-32px.png" /></a>';
+				if(filter.vid != undefined && filter.vid != null && filter.vid.length > 0 && filter.vid != "https://youtube.com"){
+					result += '<a title="Watch Video" href="' + filter.vid + '"><img src="lib/youtube.png" /></a>';
+				}
+				result += '</td><tr><td class="filter-desc">' + filter.desc + '</td></tr></table><div class="space-between-filters"></div>';
+				return result;
 			}
+
 			function createSectionHTML(section) {
 				var result = '<td class="section"><h2 class="section-header">' + section.heading + '</h2>';
 				for (var f = 0; f < section.filters.length; f++) {
@@ -60,34 +71,37 @@
 				result += "</td>";
 				return result;
 			}
-			$(document).ready(function() {
-				$.ajax("lib/filters.json").done(function(json) {
-					var sections = eval(json);
-					var sectionsPerRow = 2;
-					var target = document.getElementById("all_filters");
-					var html = "<tr style='vertical-align: top;'>";
-					for (var section = 0; section < sections.length; ++section) {
-						if (section % sectionsPerRow == 0 && section > 0) {
-							html += "</tr><tr style='vertical-align: top;'>"
-						}
-						html += createSectionHTML(sections[section]);
-						if((section+1) % sectionsPerRow != 0)
-							html += '<td class="section-spacer"><!-- spacer --></td>'
+
+			function loadFiltersFromJSON(json) {
+				var sections = eval(json);
+				var sectionsPerRow = 2;
+				var target = document.getElementById("all_filters");
+				var html = "<tr style='vertical-align: top;'>";
+				for (var section = 0; section < sections.length; ++section) {
+					if (section % sectionsPerRow == 0 && section > 0) {
+						html += "</tr><tr style='vertical-align: top;'>"
 					}
-					target.innerHTML = html;
-				});
-			});
+					html += createSectionHTML(sections[section]);
+					if ((section + 1) % sectionsPerRow != 0)
+						html += '<td class="section-spacer"><!-- spacer --></td>'
+				}
+				target.innerHTML = html;
+			}
+			function refreshFilters(){
+				$.ajax("lib/filters.json").done(loadFiltersFromJSON);
+			}
+			$(document).ready(refreshFilters());
 		</script>
 	</head>
 	<body>
 		<div align="center">
 			<h1>MCEdit Filters</h1>
+			<table width="100%"><tr><td width="80%"> </td><td class='contribute_info' align="right">Do you want your filter(s) appear here? <a href="https://github.com/Podshot/MCEdit-Filters/fork">Create a pull request!</a></td></tr></table>
 			<table id="all_filters"></table>
 			<form>
-			<input type="button" onClick="history.go(0)" value="Refresh">
+				<input type="button" onClick="refreshFilters()" value="Refresh">
 			</form>
 		</div>
 	</body>
 </html>
- 
- 
+
