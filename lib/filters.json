@@ -1,85 +1,108 @@
-[
-	{
-		"heading": "Podshot's Filters",
-		"filters": [
-			{
-				"name": "Purge",
-				"desc": "Deletes the selected mob from the Selection Box ",
-				"dl": "http://podshot.github.io/files/Purge.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Purge.py",
-				"vid": "https://youtube.com"
-			}, {
-				"name": "Fill Dispensers Filter",
-				"desc": "Original Filter by Sethbling. Modified to support Droppers ",
-				"dl": "http://podshot.github.io/files/filldispensers.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/filldispensers.py",
-				"vid": "https://youtube.com"
-			}, {
-				"name": "Presistence Filter",
-				"desc": "Removes all entities in selection box",
-				"dl": "http://podshot.github.io/files/Persistence.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Persistence.py",
-				"vid": "https://youtube.com"
-			}, {
-				"name": "Name Mobs Filter",
-				"desc": "Names mobs in selection box",
-				"dl": "http://podshot.github.io/files/Name+Mobs.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Name%20Mobs.py",
-				"vid": "https://www.youtube.com/watch?v=OxtwCwtxSKA"
-			}, {
-				"name": "Get Block Data",
-				"desc": "Get a blocks ID and Data value",
-				"dl": "http://podshot.github.io/files/getblockdata.py",
-				"src": "https:https://github.com/Podshot/MCEdit-Filters/blob/master/getblockdata.py",
-				"vid": "https://youtube.com"
-			}, {
-				"name": "Leasher",
-				"desc": "Leashes mobs together",
-				"dl": "http://podshot.github.io/files/Leasher.py",
-				"src": "https:https://github.com/Podshot/MCEdit-Filters/blob/master/Leasher.py",
-				"vid": "https://youtube.com"
-			}
-		]
-	}, {
-		"heading": "Tomsik68's Filters",
-		"filters": [
-			{
-				"name": "Rename Tiles Filter",
-				"desc": "Renames all Tile Entities in the Selection Box ",
-				"dl": "http://podshot.github.io/files/Rename+Tiles.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Rename%20Tiles.py",
-				"vid": "https://youtube.com"
-			}, {
-				"name": "Add Vines Filter",
-				"desc": " Add Vines to the sides of blocks ",
-				"dl": "http://podshot.github.io/files/AddVines.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/AddVines.py",
-				"vid": "https://youtube.com"
-			}, {
-				"name": "Schematic To Script Filter",
-				"desc": " Converts the Selection box into Python Code for filters. ",
-				"dl": "http://podshot.github.io/files/SchematicToScript.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SchematicToScript.py",
-				"vid": "https://youtube.com"
-			}, {
-				"name": "Set Block Data",
-				"desc": " Changes the Data Value of the choosen block in the Selection Box ",
-				"dl": "http://podshot.github.io/files/SetBlockData.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SetBlockData.py",
-				"vid": "https://youtube.com"
-			}, {
-				"name": "Fireworks Editor",
-				"desc": " Creates firework rocket with custom explosion effects",
-				"dl": "http://podshot.github.io/files/FireworksEdit.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/FireworksEdit.py",
-				"vid": "https://youtube.com"
-			}, {
-				"name": "Fireworks Spawner",
-				"desc": " Select container(s) which will be changed to mob spawners that spawn the firework rocket inside",
-				"dl": "http://podshot.github.io/files/FireworksSpawner.py",
-				"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/FireworksSpawner.py",
-				"vid": "https://youtube.com"
-			}
-		]
-	}
-]
+{
+	"categories": [
+		{
+			"name": "tile_entity_edit",
+			"title": "Tile Entity Edit"
+		}, {
+			"name": "entity_edit",
+			"title": "Entity Edit"
+		}, {
+			"name": "item_edit",
+			"title": "Item Manipulation"
+		}, {
+			"name": "block_edit",
+			"title": "Block Manipulation"
+		}, {
+			"name": "world_gen",
+			"title": "World Generation"
+		}
+	],
+	"filters": [
+		{
+			"name": "Purge",
+			"desc": "Deletes the selected mob from the Selection Box ",
+			"dl": "http://podshot.github.io/files/Purge.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Purge.py",
+			"author": "Podshot",
+			"categories": ["entity_edit"]
+		}, {
+			"name": "Fill Dispensers Filter",
+			"desc": "Original Filter by Sethbling. Modified to support Droppers ",
+			"dl": "http://podshot.github.io/files/filldispensers.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/filldispensers.py",
+			"author": "Podshot",
+			"categories": ["tile_entity_edit"]
+		}, {
+			"name": "Presistence Filter",
+			"desc": "Removes all entities in selection box",
+			"dl": "http://podshot.github.io/files/Persistence.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Persistence.py",
+			"author": "Podshot",
+			"categories": ["entity_edit"]
+		}, {
+			"name": "Name Mobs Filter",
+			"desc": "Names mobs in selection box",
+			"dl": "http://podshot.github.io/files/Name+Mobs.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Name%20Mobs.py",
+			"vid": "OxtwCwtxSKA",
+			"author": "Podshot",
+			"categories": ["entity_edit"]
+		}, {
+			"name": "Get Block Data",
+			"desc": "Get a blocks ID and Data value",
+			"dl": "http://podshot.github.io/files/getblockdata.py",
+			"src": "https:https://github.com/Podshot/MCEdit-Filters/blob/master/getblockdata.py",
+			"author": "Podshot",
+			"categories": ["block_edit"]
+		}, {
+			"name": "Leasher",
+			"desc": "Leashes mobs together",
+			"dl": "http://podshot.github.io/files/Leasher.py",
+			"src": "https:https://github.com/Podshot/MCEdit-Filters/blob/master/Leasher.py",
+			"author": "Podshot",
+			"categories": ["entity_edit"]
+		}, {
+			"name": "Rename Tiles Filter",
+			"desc": "Renames all Tile Entities in the Selection Box ",
+			"dl": "http://podshot.github.io/files/Rename+Tiles.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Rename%20Tiles.py",
+			"author": "Tomsik68",
+			"categories": ["tile_entity_edit"]
+		}, {
+			"name": "Add Vines Filter",
+			"desc": " Add Vines to the sides of blocks ",
+			"dl": "http://podshot.github.io/files/AddVines.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/AddVines.py",
+			"author": "Tomsik68",
+			"categories": ["block_edit", "world_gen"]
+		}, {
+			"name": "Schematic To Script Filter",
+			"desc": " Converts the Selection box into Python Code for filters. ",
+			"dl": "http://podshot.github.io/files/SchematicToScript.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SchematicToScript.py",
+			"author": "Tomsik68",
+			"categories": ["world_gen", "block_edit"]
+		}, {
+			"name": "Set Block Data",
+			"desc": " Changes the Data Value of the choosen block in the Selection Box ",
+			"dl": "http://podshot.github.io/files/SetBlockData.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SetBlockData.py",
+			"author": "Tomsik68",
+			"categories": ["block_edit"]
+		}, {
+			"name": "Fireworks Editor",
+			"desc": " Creates firework rocket with custom explosion effects",
+			"dl": "http://podshot.github.io/files/FireworksEdit.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/FireworksEdit.py",
+			"author": "Tomsik68",
+			"categories": ["item_edit"]
+		}, {
+			"name": "Fireworks Spawner",
+			"desc": " Select container(s) which will be changed to mob spawners that spawn the firework rocket inside.<BR> This filter is designed to work along with Fireworks Editor.",
+			"dl": "http://podshot.github.io/files/FireworksSpawner.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/FireworksSpawner.py",
+			"author": "Tomsik68",
+			"categories": ["item_edit", "tile_entity_edit"]
+		}
+	]
+}
