@@ -62,6 +62,13 @@
 			"author": "Podshot",
 			"categories": ["entity_edit"]
 		}, {
+			"name": "Fill Commands",
+			"desc": "Fills all the Command Blocks in the Selection with the one specified Command",
+			"dl": "http://podshot.github.io/files/Fill+Commands.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Fill%20Commands.py",
+			"author": "Podshot",
+			"categories": ["tile_entity_edit"]
+		}, {
 			"name": "Rename Tiles Filter",
 			"desc": "Renames all Tile Entities in the Selection Box ",
 			"dl": "http://podshot.github.io/files/Rename+Tiles.py",
