@@ -70,7 +70,7 @@
 			"categories": ["tile_entity_edit"]
 		}, {
 			"name": "Clear Items",
-			"desc": "Clears every Tile Entities inventory"
+			"desc": "Clears every Tile Entities inventory",
 			"dl": "http://podshot.github.io/files/Clear+Items.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Clear%20Items.py",
 			"author": "Podshot",
