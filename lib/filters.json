@@ -69,6 +69,20 @@
 			"author": "Podshot",
 			"categories": ["tile_entity_edit"]
 		}, {
+			"name": "Clear Items",
+			"desc": "Clears every Tile Entities inventory"
+			"dl": "http://podshot.github.io/files/Clear+Items.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Clear%20Items.py",
+			"author": "Podshot",
+			"categories": ["tile_entity_edit"]
+		}, {
+			"name": "Spawn Here",
+			"desc": "Sets the Spawners coordinates to the Spawners current location",
+			"dl": "http://podshot.github.io/files/Spawn+Here.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Spawn%20Here.py",
+			"author": "Podshot",
+			"categories": ["tile_entity_edit"]
+		}, {
 			"name": "Rename Tiles Filter",
 			"desc": "Renames all Tile Entities in the Selection Box ",
 			"dl": "http://podshot.github.io/files/Rename+Tiles.py",
