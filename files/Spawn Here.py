@@ -19,8 +19,8 @@ def perform(level, box, options):
                     tey = te["y"].value
                     tez = te["z"].value
 
-                    if (x,y,z) in box:
-                        if "SpawnData" in e:
+                    if (tex,tey,tez) in box:
+                        if "SpawnData" in te:
                             pos = te["Spawndata"]
                             pos["Pos"] = TAG_List()
                             pos["Pos"].append(TAG_Double(tex))
@@ -29,7 +29,6 @@ def perform(level, box, options):
                             del te["SpawnPotentials"]
                             chunk.dirty = True
 
-    for (chunk, slices, point) in level.getChunkSlices(box):
         if mcspawner:
             for e in chunk.Entities:
                 if e["id"].value == "MinecartSpawner":
@@ -37,7 +36,7 @@ def perform(level, box, options):
                     ey = e["Pos"][1].value
                     ez = e["Pos"][2].value
 
-                    if (x,y,z) in box:
+                    if (ex,ey,ez) in box:
                         if "SpawnData" in e:
                             pos = e["Spawndata"]
                             pos["Pos"] = TAG_List()
