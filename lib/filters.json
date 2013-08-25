@@ -83,6 +83,20 @@
 			"author": "Podshot",
 			"categories": ["tile_entity_edit"]
 		}, {
+			"name": "Invisible Block Maker",
+			"desc": "Creates invisible blocks that are indestructible in survival",
+			"dl": "http://podshot.github.io/files/Invisible+Block+Maker.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Invisible%20Block%20Maker.py",
+			"author": "Podshot",
+			"categories": ["world_gen", "block_gen"]
+		}, {
+			"name": "Restone Spawner",
+			"desc": "Creates a Redstone Activated Spawner Layout",
+			"dl": "http://podshot.github.io/files/Redstone+Spawner+v2.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Redstone%20Spawner%20v2.py",
+			"author": "Podshot",
+			"categories": ["world_gen", "block_gen"]
+		}, {
 			"name": "Rename Tiles Filter",
 			"desc": "Renames all Tile Entities in the Selection Box ",
 			"dl": "http://podshot.github.io/files/Rename+Tiles.py",
