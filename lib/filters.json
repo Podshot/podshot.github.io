@@ -97,6 +97,13 @@
 			"author": "Podshot",
 			"categories": ["world_gen", "block_gen"]
 		}, {
+			"name": "Minecart Creator",
+			"desc": "Creates a custom Minecart",
+			"dl": "http://podshot.github.io/files/Minecart+Creator.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Minecart%20Creator.py",
+			"author": "Podshot",
+			"categories": ["entity_edit"]
+		}, {
 			"name": "Rename Tiles Filter",
 			"desc": "Renames all Tile Entities in the Selection Box ",
 			"dl": "http://podshot.github.io/files/Rename+Tiles.py",
