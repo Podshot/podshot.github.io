@@ -42,7 +42,7 @@
 		}, {
 			"name": "Name Mobs Filter",
 			"desc": "Names mobs in selection box",
-			"dl": "http://podshot.github.io/files/Name+Mobs.py",
+			"dl": "http://podshot.github.io/files/Name%20Mobs.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Name%20Mobs.py",
 			"vid": "OxtwCwtxSKA",
 			"author": "Podshot",
@@ -64,49 +64,49 @@
 		}, {
 			"name": "Fill Commands",
 			"desc": "Fills all the Command Blocks in the Selection with the one specified Command",
-			"dl": "http://podshot.github.io/files/Fill+Commands.py",
+			"dl": "http://podshot.github.io/files/Fill%20Commands.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Fill%20Commands.py",
 			"author": "Podshot",
 			"categories": ["tile_entity_edit"]
 		}, {
 			"name": "Clear Items",
 			"desc": "Clears every Tile Entities inventory",
-			"dl": "http://podshot.github.io/files/Clear+Items.py",
+			"dl": "http://podshot.github.io/files/Clear%20Items.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Clear%20Items.py",
 			"author": "Podshot",
 			"categories": ["tile_entity_edit"]
 		}, {
 			"name": "Spawn Here",
 			"desc": "Sets the Spawners coordinates to the Spawners current location",
-			"dl": "http://podshot.github.io/files/Spawn+Here.py",
+			"dl": "http://podshot.github.io/files/Spawn%20Here.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Spawn%20Here.py",
 			"author": "Podshot",
 			"categories": ["tile_entity_edit"]
 		}, {
 			"name": "Invisible Block Maker",
 			"desc": "Creates invisible blocks that are indestructible in survival",
-			"dl": "http://podshot.github.io/files/Invisible+Block+Maker.py",
+			"dl": "http://podshot.github.io/files/Invisible%20Block%20Maker.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Invisible%20Block%20Maker.py",
 			"author": "Podshot",
 			"categories": ["world_gen", "block_gen"]
 		}, {
 			"name": "Restone Spawner",
 			"desc": "Creates a Redstone Activated Spawner Layout",
-			"dl": "http://podshot.github.io/files/Redstone+Spawner+v2.py",
+			"dl": "http://podshot.github.io/files/Redstone%20Spawner%20v2.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Redstone%20Spawner%20v2.py",
 			"author": "Podshot",
 			"categories": ["world_gen", "block_gen"]
 		}, {
 			"name": "Minecart Creator",
 			"desc": "Creates a custom Minecart",
-			"dl": "http://podshot.github.io/files/Minecart+Creator.py",
+			"dl": "http://podshot.github.io/files/Minecart%20Creator.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Minecart%20Creator.py",
 			"author": "Podshot",
 			"categories": ["entity_edit"]
 		}, {
 			"name": "Rename Tiles Filter",
 			"desc": "Renames all Tile Entities in the Selection Box ",
-			"dl": "http://podshot.github.io/files/Rename+Tiles.py",
+			"dl": "http://podshot.github.io/files/Rename%20Tiles.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Rename%20Tiles.py",
 			"author": "Tomsik68",
 			"categories": ["tile_entity_edit"]
