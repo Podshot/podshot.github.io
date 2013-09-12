@@ -111,6 +111,13 @@
 			"author": "Tomsik68",
 			"categories": ["tile_entity_edit"]
 		}, {
+			"name": "Block to Command",
+			"desc": "Turns all blocks into command blocks that use the /setblock command. Only works with 13w37a or above!",
+			"dl": "http://podshot.github.io/files/block2command.py",
+			"src": "https;//github.com/Podshot/MCEdit-Filters/blob/master/block2command.py",
+			"author": "Podshot",
+			"categories": ["world_gen", "tile_entity_edit", "block_edit"]
+		}, {
 			"name": "Add Vines Filter",
 			"desc": " Add Vines to the sides of blocks ",
 			"dl": "http://podshot.github.io/files/AddVines.py",
