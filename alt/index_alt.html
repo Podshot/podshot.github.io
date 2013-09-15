@@ -3,91 +3,48 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>MCEdit Filters</title>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<title>MCEdit filters</title>
 		<style type="text/css">
-			.space-between-filters {
-				height: 20px;
-				width: 100%;
-			}
-			.filter-heading {
-				font-weight: bold;
-				text-align: center;
-			}
-			.filter-table {
-				background-color: #EEEEEE;
-				border-top-width: 0.7px;
-				border-top-style: dotted;
-				border-bottom-width: 0.7px;
-				border-bottom-style: dotted;
-				padding-bottom: 2%;
-				/*border-bottom-left-radius: 15px;
-				border-bottom-right-radius: 15px;*/
-				width: 100%;
-			}
-			a:hover {
-				opacity: 0.7;
-			}
-			.section-spacer {
-				width: 2.5%;
-			}
-			#all_filters {
-				text-align: center;
-			}
-			.filter-desc {
-				text-align: center;
-				width: 100%;
-				text-align: center;
-			}
-			.section-header{
-			}
-			td.section{
-				border-top-left-radius: 35px;
-				border-top-right-radius: 35px;
-				background-color: #CCDDF0;
-				width: 20%;
+			table, tr, td {
+				border-style: solid;
+				border-width: 1px;
 			}
 		</style>
-		<script type="text/javascript">
-			function createFilterHTML(filter) {
-				return '<table class="filter-table"><tr class="filter-heading">	<td><h2>' + filter.name + '</h2></td><td style="position:relative; top: 16px;float:right;"><a title="Download" href="' + filter.dl + '"><img src="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/32/Network-Download-icon.png" /></a><a title="View Source" href="' + filter.src + '"><img src="lib/GitHub-Mark-32px.png" /></a><a title="Watch Video" href="' + filter.vid + '"><img src="lib/youtube.png" /></a></td><tr><td class="filter-desc">' + filter.desc + '</td></tr></table><div class="space-between-filters"></div>';
-			}
-			function createSectionHTML(section) {
-				var result = '<td class="section"><h2 class="section-header">' + section.heading + '</h2>';
-				for (var f = 0; f < section.filters.length; f++) {
-					result += createFilterHTML(section.filters[f]);
-				}
-				result += "</td>";
-				return result;
-			}
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script type='text/javascript' src='lib/category_view.js' ></script>
+		<script type='text/javascript' src='lib/cache.js' ></script>
+		<script type='text/javascript' src='lib/search.js' ></script>
+		<script type='text/javascript' src='lib/youtube_player.js'></script>
+		<script type='text/javascript'>
 			$(document).ready(function() {
-				$.ajax("lib/filters.json").done(function(json) {
-					var sections = eval(json);
-					var sectionsPerRow = 2;
-					var target = document.getElementById("all_filters");
-					var html = "<tr style='vertical-align: top;'>";
-					for (var section = 0; section < sections.length; ++section) {
-						if (section % sectionsPerRow == 0 && section > 0) {
-							html += "</tr><tr style='vertical-align: top;'>"
-						}
-						html += createSectionHTML(sections[section]);
-						if((section+1) % sectionsPerRow != 0)
-							html += '<td class="section-spacer"><!-- spacer --></td>'
-					}
-					target.innerHTML = html;
-				});
+				$("#videoplayer").hide();
+				$("#searchButton").click(search);
 			});
 		</script>
+		<link rel="stylesheet" type="text/css" href="lib/style.css" />
 	</head>
-	<body>
-		<div align="center">
-			<h1>MCEdit Filters</h1>
-			<table id="all_filters"></table>
-			<form>
-			<input type="button" onClick="history.go(0)" value="Refresh">
-			</form>
+	<body onload="loadData()">
+		<table width="100%">
+			<tr>
+				<td align="center" colspan='2'><h1>MCEdit filters</h1></td><td class='contribute_info' width="15%">Do you want your filter(s) to appear here? <a href="https://github.com/Podshot/MCEdit-Filters/fork">Fork the repo, add your changes & make a pull request!</a></td>
+			</tr>
+			<tr>
+				<td rowspan="2" width="20%" style='vertical-align: top;'><h2 align="center">Categories</h2><ul id='categories'></ul></td>
+				<td colspan='3' align="center"><span id='category'><h1>Category</h1></span>				<textarea cols='50' rows='1' id='search'> </textarea>
+				<button id='searchButton'>
+					Search
+				</button>
+			</tr>
+			<tr>
+				<td id='content' colspan='3' align="left"></td>
+			</tr>
+			</tr>
+		</table>
+
+		<div id='videoplayer' onclick='$(this).hide()'>
+			<span style='background-color: black; color: white;'>If there is no video, <button onclick='window.location = "http://podshot.github.io"'>Click me!</button></span><BR>
+			<iframe id='youtube' allowfullscreen></iframe>
 		</div>
 	</body>
 </html>
- 
- 
+
