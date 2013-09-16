@@ -26,6 +26,7 @@ displayName = "Spawner Point v3"
 inputs = (
     ("Change Spawn Radius?", False),
     ("Replaces the Spawning Coordinates to a Sponge block in the Selection box.", "label"),
+    ("Version: 1.5","label"),
 )
 
 

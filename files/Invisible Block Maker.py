@@ -5,6 +5,7 @@ displayName = "Invisible Wall"
 
 inputs = (
     ("These invisible blocks are full blocks, and they are un-breakable in survival", "label"),
+    ("Version: 1.0","label"),
     )
 
 def perform(level, box, options):
