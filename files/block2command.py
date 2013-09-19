@@ -14,15 +14,16 @@ inputs = (
 def perform(level, box, options):
         met = options["Method:"]
 	
-	for x in xrange(box.minx, box.maxx):
-		for y in xrange(box.miny, box.maxy):
-	 	 	for z in xrange(box.minz, box.maxz):
-	 	 	 	bid = int(level.blockAt(x, y, z))
-	 	 	 	bda = int(level.blockDataAt(x, y, z))
-	 	 	 	if bid != 0:
+        for x in xrange(box.minx, box.maxx):
+                for y in xrange(box.miny, box.maxy):
+                        for z in xrange(box.minz, box.maxz):
+                                bid = int(level.blockAt(x, y, z))
+                                bda = int(level.blockDataAt(x, y, z))
+                                zed = z - 1
+                                if bid != 0:
                                         time.sleep(0.25)
                                         level.setBlockAt(x, y, z, 137)
-                                        com = "/setblock " + str(x) + " " + str(y) + " " + str(z - 1) + " " + str(bid) + " " + str(bda) + " " + str(met)
+                                        com = "/setblock " + str(x) + " " + str(y) + " " + str(zed) + " " + str(bid) + " " + str(bda) + " " + str(met)
                                         print com
                                         command = TAG_Compound()
                                         command["id"] = TAG_String("Control")
@@ -36,4 +37,3 @@ def perform(level, box, options):
                                         chunk = level.getChunk(box.minx/16, box.minz/16)
                                         chunk.TileEntities.append(command)
                                         chunk.dirty = True
-	 	 	 	
