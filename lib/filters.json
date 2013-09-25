@@ -104,7 +104,7 @@
 			"author": "Podshot",
 			"categories": ["entity_edit"]
                 }, {
-                        "name": " Sign Edit",
+                        "name": "Sign Edit",
                         "desc": "Edit sign text and replace words on the sign",
                         "dl": "http://podshot.github.io/files/Sign%20Edit.py",
                         "src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Sign%20Edit.py",
