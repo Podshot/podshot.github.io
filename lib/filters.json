@@ -103,13 +103,13 @@
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Minecart%20Creator.py",
 			"author": "Podshot",
 			"categories": ["entity_edit"]
-        }, {
-            "name": "Sign Edit",
-            "desc": "Edit sign text and replace words on a sign",
-            "dl": "http://podshot.github.io/files/Sign%20Edit.py",
-            "src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Sign%20Edit.py",
-            "author": "Podshot",
-            "categories": ["tile_entity_edit"]
+        	}, {
+            		"name": "Sign Edit",
+            		"desc": "Edit sign text and replace words on a sign",
+            		"dl": "http://podshot.github.io/files/Sign%20Edit.py",
+        		 "src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Sign%20Edit.py",
+            		"author": "Podshot",
+        		 "categories": ["tile_entity_edit"]
 		}, {
 			"name": "Rename Tiles Filter",
 			"desc": "Renames all Tile Entities in the Selection Box ",
