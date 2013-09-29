@@ -169,7 +169,7 @@
 			"name": "Spawner To Command Block",
 			"desc": "All spawners in selection box will be changed to command blocks using the new /summon command.",
 			"dl": "files/SpawnerToCommandBlock.py",
-			"src": "",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/SpawnerToCommandBlock.py",
 			"author": "Tomsik68",
 			"categories": ["tile_entity_edit", "spawners", "cmd_blocks"]
 		}
