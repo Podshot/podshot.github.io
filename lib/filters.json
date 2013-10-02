@@ -117,6 +117,13 @@
 			"author": "Podshot",
 			"categories": ["tile_entity_edit"]
 		}, {
+			"name": "Id to Block Name",
+			"desc": "Changes the Block ID's in Command Blocks to the minecraft:<tile-name> format. The command must be either /setblock or /testblock",
+			"dl": "http://podshot.github.io/files/id2blockname.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/id2blockname.py",
+			"author": "Podshot",
+			"categories": ["tile_entity_edit", "cmd_blocks"]
+		}, {
 			"name": "Rename Tiles Filter",
 			"desc": "Renames all Tile Entities in the Selection Box ",
 			"dl": "http://podshot.github.io/files/Rename%20Tiles.py",
