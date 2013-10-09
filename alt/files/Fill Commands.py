@@ -3,6 +3,7 @@ import time
 
 inputs = (
     ("Command", "string"),
+    ("Version: 1.0","label"),
     )
 
 def perform(level, box, options):

@@ -26,6 +26,7 @@ carts = {
       "Chest": 4,
       "Hopper": 5,
       "Spawner": 6,
+      "Command Block": 7,
 }
 
 inputs = (
@@ -34,6 +35,7 @@ inputs = (
     ("Block Height from Cart:", 0),
     ("A Height of 16 will move the block up by exactly one multiple of its height.", "label"),
     ("Type of Cart:", tuple(sorted(carts.keys()))),
+    ("Version: 1.7","label"),
 )
 
 
@@ -57,6 +59,8 @@ def perform(level, box, options):
         mc = TAG_String("MinecartHopper")
     elif typ == "Spawner":
         mc = TAG_String("MinecartSpawner")
+    elif typ == "Command Block":
+        mc = TAG_String("MinecartCommandBlock")
         
     for (chunk, slices, point) in level.getChunkSlices(box):
             for t in chunk.TileEntities:
@@ -94,7 +98,11 @@ def perform(level, box, options):
                     for tag in t:
                         if tag not in ["id", "x", "y", "z"]:
                             cart[tag] = t[tag]
-
+                if typ == "MinecartCommandBlock":
+                    if t["id"] == "Control":
+                        cart["Command"] = t["Command"]
+                        cart["CustomName"] = t["CustomName"]
+                        
                 chunk.Entities.append(cart)
                 chunk.dirty = True
 				

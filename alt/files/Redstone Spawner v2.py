@@ -34,6 +34,7 @@ inputs = (
         ("", "label"),
         ("It will generate the layout towards the west, put the selection box", "label"),
         ("were the inupt is. Make sure the selection box is 1x1x1!", "label"),
+        ("Version: 1.2","label"),
 )
 
 def repeated():

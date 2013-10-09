@@ -24,6 +24,7 @@ Mobs = ("Creeper", "Skeleton", "WitherSkeleton", "Spider", "Giant", "Zombie", "S
 inputs = (
         ("Mob", Mobs),
         ("Removes Selected Mob from Selection", "label"),
+        ("Version: 1.4","label"),
 )
 
 def perform(level, box, options):

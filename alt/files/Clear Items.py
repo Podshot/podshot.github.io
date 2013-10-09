@@ -1,5 +1,3 @@
-
-
 from pymclevel.nbt import TAG_List
 
 displayName = "Clear Items"
@@ -11,6 +9,7 @@ inputs = (
     ("Hopper", True),
     ("Dispenser", True),
     ("Dropper", True),
+    ("Version: 1.0","label"),
 )
 
 def perform(level, box, options):

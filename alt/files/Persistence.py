@@ -20,6 +20,7 @@ displayName = "Make Mobs Persistent"
 
 inputs = (
         ("Makes any mobs in the Selection Box Persistent", "label"),
+        ("Version: 1.3","label"),
 )
 # The user can't interact with that input, its great for giving extra info
 def perform(level, box, options):
