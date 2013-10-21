@@ -21,6 +21,12 @@
 		}, {
 			"name": "world_gen",
 			"title": "World Generation"
+		}, {
+			"name": "podshot",
+			"title": "Created by Podshot"
+		}, {
+			"name": "tomsik68",
+			"title": "Created by Tomsik68"
 		}
 	],
 	"filters": [
@@ -137,6 +143,13 @@
 			"src": "https;//github.com/Podshot/MCEdit-Filters/blob/master/block2command.py",
 			"author": "Podshot",
 			"categories": ["world_gen", "tile_entity_edit", "block_edit", "cmd_blocks"]
+		}, {
+			"name": "Enchanter",
+			"desc": "Adds a specified enchantment to every item in a chest, dropper, or dispenser",
+			"dl": "http://podshot.github.io/files/enchanter.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/enchanter.py",
+			"author": "Podshot"
+			"categories": ["tile_entity_edit", "item_edit"]
 		}, {
 			"name": "Add Vines Filter",
 			"desc": " Add Vines to the sides of blocks ",
