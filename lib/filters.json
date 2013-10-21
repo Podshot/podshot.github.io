@@ -148,7 +148,7 @@
 			"desc": "Adds a specified enchantment to every item in a chest, dropper, or dispenser",
 			"dl": "http://podshot.github.io/files/enchanter.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/enchanter.py",
-			"author": "Podshot"
+			"author": "Podshot",
 			"categories": ["tile_entity_edit", "item_edit"]
 		}, {
 			"name": "Add Vines Filter",
