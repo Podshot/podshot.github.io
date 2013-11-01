@@ -130,6 +130,13 @@
 			"author": "Podshot",
 			"categories": ["tile_entity_edit", "cmd_blocks", "podshot"]
 		}, {
+			"name": "Create Class Tubes",
+			"desc": "Creates class tubes with armour and item dispensing capabilities",
+			"dl": "http://podshot.github.io/files/Create%20Class%20Tubes.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Create%20Class%20Tubes.py",
+			"author": "Podshot",
+			"categories": ["tile_entity_edit", "podshot", "world_gen", "block_gen"]
+		}, {
 			"name": "Rename Tiles Filter",
 			"desc": "Renames all Tile Entities in the Selection Box ",
 			"dl": "http://podshot.github.io/files/Rename%20Tiles.py",
