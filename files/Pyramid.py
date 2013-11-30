@@ -7,7 +7,7 @@ displayName = "Pyramid Maker"
 
 inputs = (
     ("Block:", "blockytpe"),
-    ("Levels", (2,2,1data)),
+    ("Levels", (2,2,10)),
     ("Box must be 1x1x1!","label"),
     )
 
