@@ -31,6 +31,13 @@
 	],
 	"filters": [
 		{
+            "name": "Create Spheres",
+            "desc": "Creates Spheres by rotating Minecarts",
+            "dl": "https://podshot.github.io/files/Create%20Spheres.py",
+            "src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Create%20Spheres.py",
+            "author": "Podshot",
+            "categories": ["entity_edit", "podshot", ""tile_entity_edit", "world_gen", "block_edit", "cmd_blocks"]
+        }, {
 			"name": "Purge",
 			"desc": "Deletes the selected mob from the Selection Box ",
 			"dl": "http://podshot.github.io/files/Purge.py",
