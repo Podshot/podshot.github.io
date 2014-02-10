@@ -207,7 +207,7 @@
 			"author": "Tomsik68",
 			"categories": ["tile_entity_edit", "spawners", "cmd_blocks", "tomsik68"]
 		}, {
-		    "name": "Custom Heads",
+		    	"name": "Custom Heads",
 			"desc": "Allows creation of custom heads in their block form, comes with a list of premade heads",
 			"dl": "files/Custom%20Heads.py",
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Custom%20Heads.py",
