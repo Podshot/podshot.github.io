@@ -213,6 +213,13 @@
 			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Custom%20Heads.py",
 			"author": "Podshot",
 			"categories": ["tile_entity_edit", "block_edit", "podshot"]
+		}, {
+			"name": "Head to UUID",
+			"desc": "Converts the head format from pre-1.8 to 1.8 format",
+			"dl": "files/Head%20to%20UUID.py",
+			"src": "https://github.com/Podshot/MCEdit-Filters/blob/master/Head%20to%20UUID.py",
+			"author": "Podshot",
+			"categories": ["tile_entity_edit", "block_edit", "podshot"]
 		}
 	]
 }
