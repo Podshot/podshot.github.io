@@ -5,6 +5,9 @@ import time
 
 displayName = "Pyramid Maker"
 
+VERSION = "0.2.5"
+UPDATE_URL = "http://podshot.github.io/update/Pyramid.json"
+
 inputs = (
     ("Block:", "blockytpe"),
     ("Levels", (2,2,10)),
