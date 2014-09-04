@@ -1,7 +1,6 @@
-# -*- coding: cp1252 -*-
 from pymclevel.nbt import TAG_String
 
-formatChar = "§"
+formatChar = unichr(167)
 
 inputs = (
     ("Character to Replace", ("string","value=&")),
