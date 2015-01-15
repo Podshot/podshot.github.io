@@ -4,7 +4,7 @@ name: Podshot's blog
 description: Ramblings from a possibly sane programmer. All opinions are my own.
 
 # url is currently only used only for the RSS feed in feed.xml
-url: podshot.tk
+url: podshot.github.io
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
