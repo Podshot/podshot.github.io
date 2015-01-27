@@ -2,6 +2,7 @@
 layout: post
 title:  "MCEdit-Unified: More than just Open Source"
 date:   2015-01-09
+comments: true
 categories: project
 ---
 *Warning: Wall of text*
@@ -18,7 +19,7 @@ the project was renamed to MCEdit-Unified. But this was not just Khroki's or my
 effort. TrazLander joined the project and help get Khroki and I communicating
 together. Then Ezekiel joined the project, he created the amazing MCEdit-Unified
 website that we know and love today. TrazLander then helped buff up the main development
-team by recruting from /r/minecraft and /r/mcedit, this increased the members from
+team by recruiting from /r/minecraft and /r/mcedit, this increased the members from
 four to thirteen. These developers have made so many contributions that I don't think I can list
 each of their numerous contributions to the project and to the team itself.
 Each person in the team has various backgrounds, some had never written
