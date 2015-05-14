@@ -9,9 +9,15 @@ layout: default
         {% if site.comments == true and post.comments == true and site.disqus != '' %}
           <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread">Comments</a></p>
         {% endif %}
-        <div class="content">
+        {% if post.categories contains 'personal' %}
+          <div class="content">
+            This post may contain personal content, so click the direct link if you want to read
+          </div>
+        {% else %} 
+          <div class="content">
             {{ post.content }}
-        </div>
+          </div>
+        {% endif %}
     </div>
 </div>
 {% endfor %}
