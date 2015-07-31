@@ -1,7 +1,7 @@
 # Example Filter that can be updated
 
 # Will always need an update since the version number never changes
-VERSION = "0.0.0"
+VERSION = "0.0.1"
 UPDATE_URL = "http://podshot.github.io/update_json.json"
 
 def perform(level, box, options):
