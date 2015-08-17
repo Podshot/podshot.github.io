@@ -1,0 +1,20 @@
+== Version v0.0.8.2-alpha ==
+* Changed site to Github instead of Dropbox
+
+== Version v0.0.8.1-alpha ==
+* Tweaked colors
+* Fixed Controls button not fading out
+* Added a delay before fading out a level apon completion
+* Stopped development on Mac OS X until compile issues are solved
+
+== Version v0.0.8-alpha ==
+* Fixed a level layout issue that could be exploited
+* Help Text now fades in with the level
+* Moved Controls to a button to remove Main Menu clutter
+* Added a rough Level Editor
+* Changed color of some level elements
+
+== Version v0.0.7.1-alpha ==
+* Fixed objective color not fading back to original color
+* Fixed anchor issues with the version text
+* Update checking should be faster
