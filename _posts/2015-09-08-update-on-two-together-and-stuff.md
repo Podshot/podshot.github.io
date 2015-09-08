@@ -9,9 +9,9 @@ since it has been about a month since my last post. So let's get on with it.
 
 <h3>Two Together</h3>
 Ever since the public demo of Two Together, I have gotten amazing feedback
-on how to improve the game and make it better, however, with school and
+on how to improve the game and make it better. However, with school and
 life sometimes getting in the way of me being able to work on the various
-projects I love to contribute to. So I have decided to open source it so
+projects I love to contribute to, I have decided to open source it so
 anyone who wants to learn how to make games (with my method/code layout)
 can have some help. This will also allow me to be able to get help when 
 I get stuck on a problem/bug. The Github repository can be found <a href="https://github.com/Podshot/TwoTogether">here</a>
