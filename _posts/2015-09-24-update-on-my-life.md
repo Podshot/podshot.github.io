@@ -6,6 +6,7 @@ comments: true
 categories: personal
 ---
 *Warning: This is another rant/wall of text about personal things*
+
 *Note: Some things may be repeated from previous posts*
 
 Has anyone felt that now matter what they try on something, it always seems to fall apart?
