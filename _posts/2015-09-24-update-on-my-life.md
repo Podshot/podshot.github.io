@@ -26,5 +26,5 @@ already have kind of been pushed to the outside, mostly because of my self-isola
 will react. I will come back from this, like I have multiple times in the past, but I'm not sure how long
 until that happens. I want to thank everyone who has helped me through these times, you have kept me
 going and have given me some of the best advice I could've asked for. Every friend I have made through Twitter,
-the MCEngineer's chat, and through gaming in general, has been a positive change in my life. I wouldn't
+the MCEngineer's chat, the MCEdit-Unified team, and through gaming in general, has been a positive change in my life. I wouldn't
 give up the times/conversations I have shared with them for anything else.
