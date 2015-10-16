@@ -1,14 +1,14 @@
 {
 	"Current ID":"Level_1",
 	"Next ID":"level_2",
-    "Map Format": 1,
+	"Map Format":1,
 	"Text":{
 		"Dimensions":[
 			664,
 			38.5
 		],
 		"Text":"There's nothing wrong in asking for help.",
-		"Color":"808080FF"
+		"Color":"808080FE"
 	},
 	"NormalTerrain":[
 		{
@@ -22,8 +22,8 @@
 				-4.75,
 				0
 			],
-			"Name":"Base",
-			"Color":"FFFFFFFF"
+			"Name":"NormalTerrain(Clone)",
+			"Color":"FFFFFFFE"
 		},
 		{
 			"Scale":[
@@ -36,8 +36,8 @@
 				-4.161,
 				0
 			],
-			"Name":"RightWall",
-			"Color":"FFFFFFFF"
+			"Name":"NormalTerrain(Clone)",
+			"Color":"FFFFFFFE"
 		},
 		{
 			"Scale":[
@@ -50,8 +50,8 @@
 				-4.302,
 				0
 			],
-			"Name":"LeftWall",
-			"Color":"FFFFFFFF"
+			"Name":"NormalTerrain(Clone)",
+			"Color":"FFFFFFFE"
 		},
 		{
 			"Scale":[
@@ -64,8 +64,8 @@
 				-4.202,
 				0
 			],
-			"Name":"LeftRoof",
-			"Color":"FFFFFFFF"
+			"Name":"NormalTerrain(Clone)",
+			"Color":"FFFFFFFE"
 		},
 		{
 			"Scale":[
@@ -78,22 +78,22 @@
 				-3.682,
 				0
 			],
-			"Name":"Platform",
-			"Color":"FFFFFFFF"
+			"Name":"NormalTerrain(Clone)",
+			"Color":"FFFFFFFE"
 		},
 		{
 			"Scale":[
 				0.3703704,
-				0.5925926,
+				0.5817931,
 				1
 			],
 			"Position":[
 				-2.085,
-				-4.325,
+				-4.3279,
 				0
 			],
-			"Name":"TallBlock",
-			"Color":"FFFFFFFF"
+			"Name":"NormalTerrain(Clone)",
+			"Color":"FFFFFFFE"
 		},
 		{
 			"Scale":[
@@ -106,8 +106,8 @@
 				-4.401,
 				0
 			],
-			"Name":"SmallBlock",
-			"Color":"FFFFFFFF"
+			"Name":"NormalTerrain(Clone)",
+			"Color":"FFFFFFFE"
 		}
 	],
 	"ShadowTerrain":[
@@ -122,8 +122,8 @@
 				-4.161,
 				-2
 			],
-			"Name":"UnderPlatform",
-			"Color":"FFFFFFFF"
+			"Name":"ShadowTerrain(Clone)",
+			"Color":"FFFFFFFE"
 		},
 		{
 			"Scale":[
@@ -136,8 +136,8 @@
 				-4.3815,
 				-2
 			],
-			"Name":"UnderLeftRoof",
-			"Color":"FFFFFFFF"
+			"Name":"ShadowTerrain(Clone)",
+			"Color":"FFFFFFFE"
 		}
 	],
 	"Special":[],
@@ -154,7 +154,7 @@
 				-2
 			],
 			"Name":"BigCubeObjective",
-			"Color":"69F0F0B3"
+			"Color":"69F0F0F2"
 		},
 		"Red":{
 			"Scale":[
@@ -168,7 +168,7 @@
 				-2
 			],
 			"Name":"SmallCubeObjective",
-			"Color":"EA46489D"
+			"Color":"EA46489E"
 		}
 	},
 	"Spawnpoints":{
