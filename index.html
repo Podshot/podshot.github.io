@@ -6,18 +6,16 @@ layout: default
 <div class="article">
     <div class="well">
         <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
-        {% if site.comments == true and post.comments == true and site.disqus != '' %}
-          <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread">Comments</a></p>
+        {% if site.comments and post.comments %}
+            {% if site.disqus != '' %}
+            <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread" data-disqus-identifier="{{ post.url | slugify }}">Comments</a></p>
+            {% elsif site.isso != '' %}
+            <p class="author"><a href="{{ site.baseurl }}{{ post.url }}{{ site.isso_suffix }}#isso-thread">Comments</a></p>
+            {% endif %}
         {% endif %}
-        {% if post.categories contains 'personal' %}
-          <div class="content">
-            This post may contain personal content, so click the direct link if you want to read
-          </div>
-        {% else %} 
-          <div class="content">
+        <div class="content">
             {{ post.content }}
-          </div>
-        {% endif %}
+        </div>
     </div>
 </div>
 {% endfor %}

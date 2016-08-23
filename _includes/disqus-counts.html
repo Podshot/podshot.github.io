@@ -1,6 +1,10 @@
-{% if site.comments == true and site.disqus != '' %}
+{% if site.comments and site.disqus != '' %}
   <script type="text/javascript">
     var disqus_shortname = '{{ site.disqus }}';
+
+    var disqus_config = function () {
+        this.page.identifier = '{{ page.url | slugify }}';
+    };
 
    (function () {
      var s = document.createElement('script'); s.async = true;
