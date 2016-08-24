@@ -55,6 +55,7 @@ to PC Block definitions/"alphaMaterials"</em>
 
 <br>
 <h4>Additions to Filters</h4>
+<a name="Filters.Blockstates"></a>
 <h5><b>BlockstateAPI</b></h5>
 With Minecraft moving away from IDs and using a string/name system for identifying blocks, you can now
 have blocks inputs based on a Blockstate string. Example:
@@ -91,5 +92,72 @@ structure.save("/New_Structure.nbt") # I'll let you figure out what this one doe
 {% endhighlight %}
 
 <br>
+<a name="Static_Definitions"></a>
 <h4>Block Info Summaries</h4>
-Hovering over a block now gives a summary of important information about the Block. <a target="_blank" href="\images\2016\8\22\02.png">Example</a>
+Hovering over a block now gives a summary of important information about the Block. <a target="_blank" href="\images\2016\8\23\02.png">Example</a>
+
+<br>
+<h4>Static Block Definitions</h4>
+Due to various reasons, I am (unofficially) stating that accessing the static block definitions
+is deprecated and shouldn't be used. They will still work, however. I've come to this decision
+due to the following reasons:
+
+- Static Block definitions are missing lots of blocks
+  - It's hard to find which blocks are missing
+<br>
+- Naming and Data values are inconsistent
+  - Some Blocks have all of their various Data values present, others have none
+  - Facing Direction Data values are also inconsistent (in Minecraft)
+<br>
+- Blocks with Data values are sometimes hard to name (IE: Blocks that can face different directions)
+<br>
+- Blockstates/names can exist across various editions, while Static definitions don't
+  - IE: "minecraft:grass_path" points to 208 for PC/Java, while it points to 198 for Pocket Edition
+    - We actually have this problem with our renderer, to check it out, open up a MCPE world and look at a Grass Path block or <a target="_blank" href="\images\2016\8\23\04.png">here</a>
+- Aren't based off of our definition files
+  - They have to manually added to pymclevel/materials.py
+- Requires knowledge of what kind of materials are being used
+  - While PC (Java) edition supports Command Blocks, MCPE doesn't, so if a filter puts a Command Block in a MCPE world, it could cause the game to crash or perform unexpected behaviour
+  
+ Here's an example of why using Static Block Definitions is bad:
+ {% highlight python %}
+ from pymclevel.materials import alphaMaterials
+ 
+ inputs = (
+	("Block", alphaMaterials.EndRod),
+ )
+ 
+ def perform(level, box, options):
+	
+	block = options["Block"].ID
+	origin_x = box.minx + 1
+	origin_y = box.miny + 1
+	origin_z = box.minz + 1
+	
+	level.setBlockAt(origin_x, origin_y, origin_z, alphaMaterials.Purpur.ID)
+	
+	level.setBlockAt(origin_x, origin_y + 1, origin_z, block)
+	level.setBlockAt(origin_x, origin_y - 1, origin_z, block)
+	
+	level.setBlockAt(origin_x + 1, origin_y, origin_z, block)
+	level.setBlockAt(origin_x - 1, origin_y, origin_z, block)
+	
+	level.setBlockAt(origin_x, origin_y, origin_z + 1, block)
+	level.setBlockAt(origin_x, origin_y, origin_z - 1, block)
+{% endhighlight %}
+As you could probably tell, this is a simple filter, it just puts End Rods on every side of a Purpur block.
+However, it places completely different blocks if it's in a PC world vs. a Pocket Edition world:
+<br>
+<a target="_blank" href="\images\2016\8\23\03.png"><b>PC World Output</b></a>
+<br>
+<a target="_blank" href="\images\2016\8\23\04.png"><b>Pocket Edition World Output</b></a> (This is renderer issue I mentioned earlier, those wierdly
+textured End Rods are actually Grass path blocks, and would be so if opened in MCPE)
+
+This is not only inconsistent behaviour (the Grass Path block vs. the End Rod), but it introduces a Unknown Block
+into the world, which could cause a crash. It also makes the output unpredicatable, if the filter is ran
+with default inputs (and in a MCPE world), the block picked is not the block actually placed, which would confuse the user.
+
+So in conclusion, I would like to ask filter creators to use the <a href="#Filters.Blockstates">Blockstate API</a> for any new filters they create after the
+next release (preferably use the way used in "Block Method #1"). Again, <b>the old way will still work</b>, so your filters
+won't break, at least until PC switches completely from IDs to Blockstates.
+ 
