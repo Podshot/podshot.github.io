@@ -63,7 +63,7 @@ have blocks inputs based on a Blockstate string. Example:
 {% highlight python %}
 from pymclevel.materials import alphaMaterials
 inputs = (
-	("Block Method #1", ("block", "minecraft:stone[variant=granite]"),
+	("Block Method #1", ("block", "minecraft:stone[variant=granite]")),
 	("Block Method #2", alphaMaterials["minecraft:stone[variant=granite]"]),
 	("Another Option", true),<br>
     )
