@@ -17,7 +17,7 @@ where you could them share them with friends or reimport them in another locatio
 in the world in-game via another Structure Block. (IE: Vanilla Minecraft's version of Schematics)
 Well, MCEdit-Unified now has the ability to import and export .nbt files! Importing them
 is the same way as importing a regular schematic. However, for exporting, you will need
-to change the file type in the <a target="_blank" rel="noopener noreferrer" href="\images\2016\8\22\01.png">save dialog</a> to change the format the file is saved in.
+to change the file type in the <a target="_blank" rel="noopener noreferrer" href="\images\2016\8\23\01.png">save dialog</a> to change the format the file is saved in.
 (Schematic vs. Structure .nbt)
 
 Filter creators can also use Structure files in their filters, but this will be detailed in a later section.
