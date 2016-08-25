@@ -17,7 +17,7 @@ where you could them share them with friends or reimport them in another locatio
 in the world in-game via another Structure Block. (IE: Vanilla Minecraft's version of Schematics)
 Well, MCEdit-Unified now has the ability to import and export .nbt files! Importing them
 is the same way as importing a regular schematic. However, for exporting, you will need
-to change the file type in the <a target="_blank" href="\images\2016\8\22\01.png">save dialog</a> to change the format the file is saved in.
+to change the file type in the <a target="_blank" rel="noopener noreferrer" href="\images\2016\8\22\01.png">save dialog</a> to change the format the file is saved in.
 (Schematic vs. Structure .nbt)
 
 Filter creators can also use Structure files in their filters, but this will be detailed in a later section.
@@ -94,7 +94,7 @@ structure.save("/New_Structure.nbt") # I'll let you figure out what this one doe
 <br>
 <a name="Static_Definitions"></a>
 <h4>Block Info Summaries</h4>
-Hovering over a block now gives a summary of important information about the Block. <a target="_blank" href="\images\2016\8\23\02.png">Example</a>
+Hovering over a block now gives a summary of important information about the Block. <a target="_blank" rel="noopener noreferrer" href="\images\2016\8\23\02.png">Example</a>
 
 <br>
 <h4>Static Block Definitions</h4>
@@ -148,9 +148,9 @@ due to the following reasons:
 As you could probably tell, this is a simple filter, it just puts End Rods on every side of a Purpur block.
 However, it places completely different blocks if it's in a PC world vs. a Pocket Edition world:
 <br>
-<a target="_blank" href="\images\2016\8\23\03.png"><b>PC World Output</b></a>
+<a target="_blank" rel="noopener noreferrer" href="\images\2016\8\23\03.png"><b>PC World Output</b></a>
 <br>
-<a target="_blank" href="\images\2016\8\23\04.png"><b>Pocket Edition World Output</b></a> (This is renderer issue I mentioned earlier, those wierdly
+<a target="_blank" rel="noopener noreferrer" href="\images\2016\8\23\04.png"><b>Pocket Edition World Output</b></a> (This is renderer issue I mentioned earlier, those wierdly
 textured End Rods are actually Grass path blocks, and would be so if opened in MCPE)
 
 This is not only inconsistent behaviour (the Grass Path block vs. the End Rod), but it introduces a Unknown Block
