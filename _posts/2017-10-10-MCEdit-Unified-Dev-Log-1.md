@@ -28,7 +28,7 @@ When I started looking for a Continuous Integration system that supported a Wind
 option for a Windows environment. The next step is to configure the said environment. Appveyor uses a [YAML file](https://github.com/Khroki/MCEdit-Unified/blob/master/appveyor.yml) to
 handle the environment and build stages. Since we can just build MCEdit-Unified from two commands, we just set one
 build stage to run {% highlight shell %} pip install -r requirements.txt {% endhighlight %} which installs all of
-the requirements needed to run MCEdit and another to run {% highlight shell} pyinstaller mcedit-ci.spec -y {% endhighlight} 
+the requirements needed to run MCEdit and another to run {% highlight shell %} pyinstaller mcedit-ci.spec -y {% endhighlight %} 
 which runs our PyInstaller script to actually build the executable.
 
 <h4>Building the build script</h4>
